@@ -27,6 +27,12 @@ describe('getParentPath', () => {
 		expect(getParentPath('/settings/products')).toBe('/settings');
 	});
 
+	// Test path with query param
+	it('should handle path with query param properly', () => {
+		expect(getParentPath('/settings/product/123456')).toBe('/settings');
+		expect(getParentPath('/notifications/product/123456')).toBe('/notifications');
+	});
+
 	// Test multiple nested levels
 	it('should handle deeply nested paths correctly', () => {
 		expect(getParentPath('/a/b/c/d')).toBe('/a/b/c');

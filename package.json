@@ -15,6 +15,7 @@
     "react-dom": "19.0.0-rc-69d4b800-20241021"
   },
   "devDependencies": {
+    "@playwright/test": "^1.48.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^18",
