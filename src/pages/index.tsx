@@ -29,7 +29,7 @@ export default function Home() {
 				<h1>Router History: {navigationState.hasNativeHistory ? "Has history" : "Empty history"}</h1>
 				<ol className="list-disc">
 					<li>Case #1: <Link href={"/settings"}>Link</Link></li>
-					<li>Case #2: <Link href={"/notifications"}>Link</Link></li>
+					<li>Case #2: <Link href={"/notifications/123456"}>Link</Link></li>
 				</ol>
 			</main>
 		</div>
